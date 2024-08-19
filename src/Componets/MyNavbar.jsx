@@ -27,21 +27,27 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
-              className={`item ${
-                selectedItem === 4 ? "selected sezione" : "text-color sezione"
-              }`}
-              onClick={() => handleItemClick(4)}
-            >
-              <Link to="/collaborazioni">Collaborazioni</Link>
+            <Nav.Link>
+              <Link
+                className={`item ${
+                  selectedItem === 4 ? "selected sezione" : "text-color sezione"
+                }`}
+                onClick={() => handleItemClick(4)}
+                to="/collaborazioni"
+              >
+                Collaborazioni
+              </Link>
             </Nav.Link>
-            <Nav.Link
-              className={`item ${
-                selectedItem === 5 ? "selected sezione" : "text-color sezione"
-              }`}
-              onClick={() => handleItemClick(5)}
-            >
-              <Link to="/contatti">Contatti</Link>
+            <Nav.Link>
+              <Link
+                className={`item ${
+                  selectedItem === 5 ? "selected sezione" : "text-color sezione"
+                }`}
+                onClick={() => handleItemClick(5)}
+                to="/contatti"
+              >
+                Contatti
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
