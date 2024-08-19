@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "/assets/Logo - Transparent.png";
+import { Link } from "react-router-dom";
 
 const MyNavbar = () => {
   const [selectedItem, setSelectedItem] = useState(() => {
@@ -17,29 +18,30 @@ const MyNavbar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className="sfondo section">
       <Container className="con">
-        <Navbar.Brand href="/">
-          <img src={logo} alt="logo" className="grandezza foto" />
+        <Navbar.Brand>
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="logo" className="grandezza foto" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="/collaborazioni"
               className={`item ${
                 selectedItem === 4 ? "selected sezione" : "text-color sezione"
               }`}
               onClick={() => handleItemClick(4)}
             >
-              Collaborazioni
+              <Link to="/collaborazioni">Collaborazioni</Link>
             </Nav.Link>
             <Nav.Link
-              href="/contatti"
               className={`item ${
                 selectedItem === 5 ? "selected sezione" : "text-color sezione"
               }`}
               onClick={() => handleItemClick(5)}
             >
-              Contatti
+              <Link to="/contatti">Contatti</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
