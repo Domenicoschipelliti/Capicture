@@ -79,7 +79,7 @@ const Home = () => {
             <Card className="immagine">
               <Card.Body>
                 <Card.Title className="text-center text-light">
-                  Social Media Marketing/contenuti audiovisivi
+                  Social Media Marketing/ contenuti audiovisivi
                 </Card.Title>
 
                 <div className="center">

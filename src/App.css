@@ -144,7 +144,7 @@ body {
   cursor: pointer;
 }
 
-.text-color:hover {
+.over:hover {
   color: black !important; /* Stile selezionato */
 }
 

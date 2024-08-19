@@ -18,11 +18,15 @@ const MyNavbar = () => {
             <Nav.Link
               as={Link}
               to="/collaborazioni"
-              className="sezione text-color"
+              className="sezione text-color over"
             >
               Collaborazioni
             </Nav.Link>
-            <Nav.Link as={Link} to="/contatti" className="sezione text-color">
+            <Nav.Link
+              as={Link}
+              to="/contatti"
+              className="sezione text-color over"
+            >
               Contatti
             </Nav.Link>
           </Nav>
