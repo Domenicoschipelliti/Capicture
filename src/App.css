@@ -1,0 +1,207 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+body {
+  display: block !important;
+  background-color: rgb(37, 38, 37);
+}
+
+.grandezza {
+  width: 76px;
+}
+.telephone {
+  width: 57px;
+}
+.estenzione {
+  display: flex;
+  flex-direction: column !important;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.margi {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.insta:hover {
+  background: linear-gradient(45deg, #e4405f, #fcaf45, #8a3ab9);
+  border-radius: 100px;
+}
+
+.x:hover {
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 100px;
+}
+
+.face:hover {
+  background: linear-gradient(45deg, blue, black);
+  border-radius: 100px;
+}
+
+.tiktok {
+  width: 70px;
+}
+.tiktok:hover {
+  background: white;
+  border-radius: 200px;
+}
+.sfondo {
+  background: linear-gradient(100deg, blue, violet);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  border-radius: 45px;
+}
+
+.immagine {
+  background-color: #139c8e;
+  height: 23em;
+  width: 200px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.pad > button {
+  padding: 6px !important;
+}
+
+.pad > button:hover {
+  background: linear-gradient(100deg, blue, violet) !important;
+  color: white;
+}
+
+.centrare {
+  justify-content: center;
+}
+
+.contatti {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragrafoC {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.mar {
+  margin-top: 5em;
+  margin-bottom: 8em;
+}
+
+.posizione {
+  width: 70px;
+  display: flex;
+  justify-content: end;
+}
+
+.margine-row {
+  margin-bottom: 20px;
+}
+
+.light-mode {
+  background-color: #ffffff; /* Colore di sfondo per la modalità chiara */
+  color: #000000; /* Colore del testo per la modalità chiara */
+}
+
+/* Stili per dark mode */
+.dark-mode {
+  background-color: #121212; /* Colore di sfondo per la modalità scura */
+  color: #ffffff; /* Colore del testo per la modalità scura */
+}
+
+.modal-content {
+  background-color: #139c8e;
+}
+
+.text {
+  text-align: center !important;
+}
+
+.text-color {
+  color: white;
+}
+
+.dis {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.selected {
+  color: black !important; /* Stile selezionato */
+}
+
+.sezione {
+  font-size: 20px;
+}
+
+.sezione:hover {
+  font-size: 30px;
+  transition: font-size 0.7s ease;
+}
+.color {
+  background-color: rgb(37, 37, 38);
+}
+
+.ma {
+  margin-top: 50px;
+}
+
+.foto:hover {
+  width: 80px !important;
+  transition: width 0.7s ease;
+}
+
+.responsive {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.font {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .margine-row {
+    margin-bottom: 0px;
+  }
+
+  .cambio {
+    flex-direction: column;
+  }
+
+  .margi {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-system {
+    display: flex;
+    flex-direction: row;
+  }
+  .test {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
