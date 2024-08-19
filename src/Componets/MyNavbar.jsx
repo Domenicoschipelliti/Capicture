@@ -24,7 +24,7 @@ const MyNavbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              to="/collaborazioni"
+              href="/collaborazioni"
               className={`item ${
                 selectedItem === 4 ? "selected sezione" : "text-color sezione"
               }`}
@@ -33,7 +33,7 @@ const MyNavbar = () => {
               Collaborazioni
             </Nav.Link>
             <Nav.Link
-              to="/contatti"
+              href="/contatti"
               className={`item ${
                 selectedItem === 5 ? "selected sezione" : "text-color sezione"
               }`}
