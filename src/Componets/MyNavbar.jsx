@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "/assets/Logo - Transparent.png";
-import contatti from "./Contatti";
-import collaborazioni from "./Collaborazioni";
+import Contatti from "./Contatti";
+import Collaborazioni from "./Collaborazioni";
 
 const MyNavbar = () => {
   const [selectedItem, setSelectedItem] = useState(() => {
@@ -26,7 +26,8 @@ const MyNavbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              to={collaborazioni}
+              as={<Collaborazioni />}
+              to="/collaborazioni"
               className={`item ${
                 selectedItem === 4 ? "selected sezione" : "text-color sezione"
               }`}
@@ -35,7 +36,8 @@ const MyNavbar = () => {
               Collaborazioni
             </Nav.Link>
             <Nav.Link
-              to={contatti}
+              as={<Contatti />}
+              to="/contatti"
               className={`item ${
                 selectedItem === 5 ? "selected sezione" : "text-color sezione"
               }`}
