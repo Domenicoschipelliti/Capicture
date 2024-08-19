@@ -132,7 +132,7 @@ body {
 }
 
 .text-color {
-  color: white;
+  color: white !important;
 }
 
 .dis {
@@ -144,7 +144,7 @@ body {
   cursor: pointer;
 }
 
-.selected {
+.text-color:hover {
   color: black !important; /* Stile selezionato */
 }
 

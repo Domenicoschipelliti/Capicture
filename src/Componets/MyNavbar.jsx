@@ -1,20 +1,8 @@
-import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "/assets/Logo - Transparent.png";
 import { Link } from "react-router-dom";
 
 const MyNavbar = () => {
-  const [selectedItem, setSelectedItem] = useState(() => {
-    return parseInt(localStorage.getItem("selectedItem")) || null;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("selectedItem", selectedItem);
-  }, [selectedItem]);
-
-  const handleItemClick = (item) => {
-    setSelectedItem(item === selectedItem ? null : item);
-  };
   return (
     <Navbar collapseOnSelect expand="lg" className="sfondo section">
       <Container className="con">
@@ -27,27 +15,15 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link>
-              <Link
-                className={`item ${
-                  selectedItem === 4 ? "selected sezione" : "text-color sezione"
-                }`}
-                onClick={() => handleItemClick(4)}
-                to="/collaborazioni"
-              >
-                Collaborazioni
-              </Link>
+            <Nav.Link
+              as={Link}
+              to="/collaborazioni"
+              className="sezione text-color"
+            >
+              Collaborazioni
             </Nav.Link>
-            <Nav.Link>
-              <Link
-                className={`item ${
-                  selectedItem === 5 ? "selected sezione" : "text-color sezione"
-                }`}
-                onClick={() => handleItemClick(5)}
-                to="/contatti"
-              >
-                Contatti
-              </Link>
+            <Nav.Link as={Link} to="/contatti" className="sezione text-color">
+              Contatti
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
