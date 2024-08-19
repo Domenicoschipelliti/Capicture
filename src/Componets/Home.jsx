@@ -1,25 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 const Home = () => {
-  // const [invisible, setInvisible] = useState(true);
-  // const [invisible2, setInvisible2] = useState(true);
-  // const [invisible3, setInvisible3] = useState(true);
-  // const [invisible4, setInvisible4] = useState(true);
-
-  // const visible = () => {
-  //   setInvisible(!invisible);
-  // };
-
-  // const visible2 = () => {
-  //   setInvisible2(!invisible2);
-  // };
-
-  // const visible3 = () => {
-  //   setInvisible3(!invisible3);
-  // };
-  // const visible4 = () => {
-  //   setInvisible4(!invisible4);
-  // };
   return (
     <Container>
       <Row>
@@ -49,36 +30,6 @@ const Home = () => {
                   <div className="text-color text-center">
                     <p>Siti personalizzati sia dal back che dal fron end</p>
                   </div>
-                  {/* <Accordion>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible2}
-                        style={{
-                          display: invisible2 ? "block" : "none",
-                        }}
-                      >
-                        {invisible2 ? "More" : ""}
-                      </Accordion.Header>
-                      <Accordion.Body className="color">
-                        <div className="text-color">
-                          <b>Creiamo siti web personalizzati</b>
-                          <p>
-                            sia dal back che dal front end, ovviamente se ne
-                            parla di che tipo di sito si vuole fare e si trova
-                            un accordo.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible2}
-                        style={{ display: invisible2 ? "none" : "block" }}
-                      >
-                        {invisible2 ? "" : "Less"}
-                      </Accordion.Header>
-                    </Accordion.Item>
-                  </Accordion> */}
                 </div>
               </Card.Body>
             </Card>
@@ -99,29 +50,6 @@ const Home = () => {
                       post-produzione.
                     </p>
                   </div>
-                  {/* <Accordion>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible}
-                        style={{
-                          display: invisible ? "block" : "none",
-                        }}
-                      >
-                        <div>{invisible ? "More" : ""}</div>
-                      </Accordion.Header>
-                      <Accordion.Body className="color text-color">
-                       
-                      </Accordion.Body>
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible}
-                        style={{ display: invisible ? "none" : "block" }}
-                      >
-                        <div>{invisible ? "" : "Less"}</div>
-                      </Accordion.Header>
-                    </Accordion.Item>
-                  </Accordion> */}
                 </div>
               </Card.Body>
             </Card>
@@ -143,29 +71,6 @@ const Home = () => {
                       progetti multimediali.
                     </p>
                   </div>
-                  {/* <Accordion>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible3}
-                        style={{
-                          display: invisible3 ? "block" : "none",
-                        }}
-                      >
-                        {invisible3 ? "More" : ""}
-                      </Accordion.Header>
-                      <Accordion.Body className="color text-color">
-                      
-                      </Accordion.Body>
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible3}
-                        style={{ display: invisible3 ? "none" : "block" }}
-                      >
-                        {invisible3 ? "" : "Less"}
-                      </Accordion.Header>
-                    </Accordion.Item>
-                  </Accordion> */}
                 </div>
               </Card.Body>
             </Card>
@@ -186,29 +91,6 @@ const Home = () => {
                       attraverso strategie mirate sui social media.
                     </p>
                   </div>
-                  {/* <Accordion>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible4}
-                        style={{
-                          display: invisible4 ? "block" : "none",
-                        }}
-                      >
-                        {invisible4 ? "More" : ""}
-                      </Accordion.Header>
-                      <Accordion.Body className="color text-color">
-                       
-                      </Accordion.Body>
-                      <Accordion.Header
-                        className="over pad"
-                        onClick={visible4}
-                        style={{ display: invisible4 ? "none" : "block" }}
-                      >
-                        {invisible4 ? "" : "Less"}
-                      </Accordion.Header>
-                    </Accordion.Item>
-                  </Accordion> */}
                 </div>
               </Card.Body>
             </Card>

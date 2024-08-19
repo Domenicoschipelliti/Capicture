@@ -1,4 +1,5 @@
 import { Col, Container, Modal, Row } from "react-bootstrap";
+import mail from "/assets/mail.png";
 
 const Contatti = () => {
   return (
@@ -19,11 +20,7 @@ const Contatti = () => {
               <Modal.Body>
                 <div className="contatti">
                   <div>
-                    <img
-                      src="/assets/mail.png"
-                      alt="icona mail"
-                      className="grandezza"
-                    />
+                    <img src={mail} alt="icona mail" className="grandezza" />
                   </div>
 
                   <p className="paragrafoC text-light">

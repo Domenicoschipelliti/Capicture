@@ -1,13 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import MyNavbar from "./Componets/MyNavbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyFooter from "./Componets/MyFooter";
-import Servizi from "./Componets/Servizi";
 import Home from "./Componets/Home";
 import Contatti from "./Componets/Contatti";
-import Chiasiamo from "./Componets/Chisiamo";
+import MyNavbar from "./Componets/MyNavbar";
+import Collaborazioni from "./Componets/Collaborazioni";
 
 function App() {
   return (
@@ -16,10 +15,9 @@ function App() {
         <MyNavbar />
 
         <Routes>
-          <Route path="/servizi" element={<Servizi />} />
           <Route path="/" element={<Home />} />
           <Route path="/contatti" element={<Contatti />} />
-          <Route path="/chisiamo" element={<Chiasiamo />} />
+          <Route path="/collaborazioni" element={<Collaborazioni />} />
         </Routes>
         <MyFooter />
       </BrowserRouter>
